@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ryan Avaristo — criação de sites modernos e responsivos.">
+<title>Ryan Avaristo | Criação de Sites</title>
+<style>
+:root{--g:#39ff14;--bg:#050605;--card:#0d100e;--line:#202720;--t:#f4f7f4;--m:#a8b0a8}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 80% 0%,#102010 0%,var(--bg) 35%);color:var(--t);line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(1100px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(5,6,5,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{min-height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.5px}
+.brand:before{content:"";display:inline-block;width:10px;height:10px;background:var(--g);border-radius:50%;box-shadow:0 0 16px var(--g);margin-right:10px}
+.navlinks{display:flex;gap:22px;color:#cbd1cb;font-size:14px}.navlinks a:hover{color:var(--g)}
+.hero{padding:90px 0 75px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px}
+.eyebrow{color:var(--g);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:13px;margin-bottom:14px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-2px;margin-bottom:20px}h1 span{color:var(--g)}
+.hero p{color:var(--m);font-size:18px;max-width:650px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:12px;font-weight:800;border:1px solid var(--g);transition:.2s}
+.btn.primary{background:var(--g);color:#031003}.btn.primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(57,255,20,.18)}
+.btn.secondary{color:var(--t);border-color:#394139}.btn.secondary:hover{border-color:var(--g);color:var(--g)}
+.logo-wrap{display:flex;justify-content:center}.logo-wrap img{width:min(360px,78vw);filter:drop-shadow(0 0 35px rgba(57,255,20,.12))}
+section{padding:78px 0;border-top:1px solid var(--line)}.section-title{font-size:34px;margin-bottom:10px}.section-sub{color:var(--m);margin-bottom:32px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#101410,#090b09);border:1px solid var(--line);border-radius:18px;padding:26px}
+.icon{font-size:28px;margin-bottom:15px}.card h3{margin-bottom:8px}.card p{color:var(--m);font-size:15px}
+.project{display:grid;grid-template-columns:1fr 1fr;gap:25px}.project-visual{min-height:300px;border-radius:20px;border:1px solid var(--line);background:radial-gradient(circle at 50% 20%,rgba(57,255,20,.16),transparent 35%),linear-gradient(135deg,#111711,#060706);display:flex;align-items:center;justify-content:center;text-align:center}
+.project-visual strong{font-size:40px;display:block}.project-info{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px}
+.tag{display:inline-block;border:1px solid #2f482f;color:var(--g);padding:5px 10px;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:15px}
+.project-info h3{font-size:28px;margin-bottom:10px}.project-info p{color:var(--m);margin-bottom:20px}.list{list-style:none;display:grid;gap:9px;margin-bottom:24px}.list li:before{content:"✓";color:var(--g);font-weight:900;margin-right:9px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:center}.about-box{border:1px solid var(--line);border-radius:20px;padding:28px;background:var(--card)}.about-box p{color:var(--m)}
+.contact{background:linear-gradient(135deg,#0c150c,#070807);border:1px solid #203420;border-radius:24px;padding:42px;text-align:center}.contact p{color:var(--m);max-width:650px;margin:10px auto 24px}
+footer{padding:30px 0;color:#788078;text-align:center;font-size:13px}
+@media(max-width:800px){.navlinks{display:none}.hero{padding-top:60px}.hero-grid,.project,.about{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.logo-wrap{order:-1}.logo-wrap img{width:260px}h1{letter-spacing:-1px}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a class="brand" href="#inicio">RYAN AVARISTO</a>
+<div class="navlinks"><a href="#servicos">Serviços</a><a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></div>
+</nav></div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="container hero-grid"><div>
+<div class="eyebrow">Criação de sites</div>
+<h1>Seu negócio merece uma presença <span>profissional</span> na internet.</h1>
+<p>Crio sites modernos, responsivos e pensados para apresentar sua empresa, seus serviços e facilitar o contato com seus clientes.</p>
+<div class="actions"><a class="btn primary" href="#projetos">Ver meu projeto</a><a class="btn secondary" href="#contato">Solicitar orçamento</a></div>
+</div><div class="logo-wrap"><img src="logo-ryan.png" alt="Logo Ryan Avaristo"></div></div></section>
+
+<section id="servicos"><div class="container">
+<h2 class="section-title">O que eu faço</h2><p class="section-sub">Soluções simples e profissionais para pequenos negócios.</p>
+<div class="cards">
+<article class="card"><div class="icon">💻</div><h3>Sites profissionais</h3><p>Páginas modernas para apresentar sua empresa, serviços, preços e diferenciais.</p></article>
+<article class="card"><div class="icon">📱</div><h3>Responsivo</h3><p>Layout adaptado para celular, tablet e computador, com navegação fácil.</p></article>
+<article class="card"><div class="icon">⚡</div><h3>Presença online</h3><p>Uma página clara para ajudar seu negócio a ser encontrado e gerar contatos.</p></article>
+</div></div></section>
+
+<section id="projetos"><div class="container">
+<h2 class="section-title">Projeto em destaque</h2><p class="section-sub">Um exemplo de site desenvolvido para um negócio local.</p>
+<div class="project"><div class="project-visual"><div><strong>✂️</strong><h3>Barbearia Avaristo</h3><p style="color:#a8b0a8">Site demonstrativo</p></div></div>
+<div class="project-info"><span class="tag">PROJETO DEMONSTRATIVO</span><h3>Barbearia Avaristo</h3>
+<p>Landing page com visual premium, serviços, galeria, informações da empresa e chamada para contato.</p>
+<ul class="list"><li>Design moderno e responsivo</li><li>Serviços e apresentação</li><li>Botões de contato</li><li>Publicação online pelo GitHub Pages</li></ul>
+<a class="btn primary" href="https://ryan-avaristo.github.io/barbearia-avaristo/" target="_blank" rel="noopener">Abrir projeto ↗</a>
+</div></div></div></section>
+
+<section id="sobre"><div class="container about"><div><div class="eyebrow">Sobre mim</div><h2 class="section-title">Ryan Avaristo</h2></div>
+<div class="about-box"><p>Sou criador de sites e estou construindo meu trabalho através de projetos para pequenos negócios. Meu objetivo é transformar ideias em páginas bonitas, funcionais e fáceis de usar.</p><br><p>Este portfólio reúne meus projetos e mostra um pouco do que posso criar para uma empresa que quer começar ou melhorar sua presença na internet.</p></div></div></section>
+
+<section id="contato"><div class="container"><div class="contact">
+<div class="eyebrow">Vamos conversar?</div><h2 class="section-title">Quer um site para o seu negócio?</h2>
+<p>Entre em contato para conversar sobre sua ideia, conhecer as opções e solicitar um orçamento.</p>
+<a class="btn primary" href="#contato">Solicitar orçamento</a>
+<p style="font-size:12px;margin-top:15px">Adicione seu WhatsApp ou e-mail neste botão antes de divulgar o portfólio.</p>
+</div></div></section>
+</main>
+<footer>© 2026 Ryan Avaristo · Criação de Sites</footer>
+</body>
+</html>
